@@ -2,28 +2,92 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Nishkam Virtues Curriculum Maps</title>
+<title>Nishkam School West London - Curriculum Maps (Draft)</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Muli:300,400,700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#1B2A4A;--gold:#C8A951}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#f6f4ee;color:#1d2433}
-header{background:var(--navy);color:#fff;padding:56px 20px 44px;text-align:center}
-h1,h2{font-family:Georgia,"Times New Roman",serif}
-h1{margin:0 0 10px;font-size:clamp(1.8rem,5vw,2.8rem);color:#fff}
-.motto{color:var(--gold);font-style:italic;margin:0}
-main{max-width:1040px;margin:0 auto;padding:40px 20px 60px}
-.intro{text-align:center;max-width:640px;margin:0 auto 32px;color:#444}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
-.card{display:block;background:#fff;border-top:4px solid var(--gold);border-radius:10px;padding:22px;text-decoration:none;color:inherit;box-shadow:0 2px 10px rgba(27,42,74,.08);transition:transform .15s,box-shadow .15s}
-a.card:hover,a.card:focus{transform:translateY(-3px);box-shadow:0 8px 22px rgba(27,42,74,.16);outline:none}
-a.card:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.card h2{color:var(--navy);margin:12px 0 6px}.card p{margin:0 0 14px;color:#555}
-.badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:99px;text-transform:uppercase;letter-spacing:.04em}
-.badge.muted{background:#ddd;color:#555}.soon{opacity:.75;border-top-color:#bbb}
-.open{color:var(--navy);font-weight:700}
-footer{background:var(--navy);color:#dfe3ea;text-align:center;padding:26px 20px}footer em{color:var(--gold)}
+:root{--teal:#7aacac;--dark:#353535;--text:#333;--grey:#f8f8f8;--line:#e0e0e0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Open Sans",Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{color:inherit}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:99}
+.draft{background:#fff3cd;color:#1a1a1a;border-bottom:3px solid #c8a951;text-align:center;padding:10px 16px;font-weight:700;font-size:.95rem;position:relative;z-index:30}
+.hero{position:relative;min-height:560px;color:#fff;background:linear-gradient(160deg,rgba(53,53,53,.55),rgba(122,172,172,.55)),linear-gradient(180deg,#5d8f8f 0%,#9cc3c3 55%,#d9e6e6 100%);display:flex;flex-direction:column}
+header.site{display:flex;flex-direction:column;align-items:center;padding:22px 20px 0;position:relative}
+.wordmark{text-decoration:none;color:#fff;font-family:Muli,sans-serif;text-align:left;line-height:1}
+.wordmark .a{font-size:2.6rem;font-weight:300;letter-spacing:.01em}.wordmark .a b{font-weight:700}
+.wordmark .b{display:block;text-align:right;font-size:1.25rem;font-weight:300;margin-top:2px}
+nav.main ul{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;max-width:820px}
+nav.main a{display:block;padding:8px 10px;font-family:Muli,sans-serif;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;color:#fff;border-bottom:2px solid transparent}
+nav.main a:hover,nav.main a:focus,nav.main a.on{border-bottom-color:var(--teal);color:#fff}
+.burger{display:none;position:absolute;right:16px;top:20px;background:rgba(0,0,0,.25);border:0;color:#fff;width:46px;height:46px;border-radius:4px;font-size:1.5rem;cursor:pointer}
+.hero-text{margin:auto;text-align:center;padding:40px 20px 70px}
+.hero-text h1{font-family:Muli,sans-serif;font-weight:300;font-size:clamp(2rem,5vw,3.4rem);margin:0 0 8px;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.hero-text p{margin:0;font-family:Muli,sans-serif;font-size:1.2rem;font-style:italic}
+.ticker{background:var(--teal);color:#fff;font-family:Muli,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:16px 20px;text-align:center}
+section{padding:60px 20px}.wrap{max-width:1140px;margin:0 auto}
+h2{font-family:Muli,sans-serif;font-weight:300;font-size:2.2rem;text-align:center;margin:0 0 10px;color:var(--dark)}
+h2:after{content:"";display:block;width:60px;height:3px;background:var(--teal);margin:14px auto 0}
+.lead{text-align:center;max-width:680px;margin:0 auto 36px;color:#666}
+#curriculum{background:var(--grey)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{display:flex;flex-direction:column;background:#fff;text-decoration:none;color:inherit;border:1px solid var(--line);transition:box-shadow .2s,transform .2s}
+a.card:hover,a.card:focus{box-shadow:0 10px 24px rgba(0,0,0,.12);transform:translateY(-3px);outline:none}
+a.card:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.card-top{height:120px;background:linear-gradient(135deg,var(--teal),#4f7f7f);display:flex;align-items:center;justify-content:center;color:#fff;font-family:Muli,sans-serif;font-size:1.4rem;font-weight:300;text-transform:lowercase}
+.card-body{padding:20px}
+.card h3{font-family:Muli,sans-serif;color:var(--dark);margin:10px 0 6px;font-size:1.25rem}
+.card p{margin:0 0 14px;color:#666;font-size:.95rem}
+.badge{display:inline-block;background:#fff3cd;color:#1a1a1a;border:1px solid #c8a951;font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;text-transform:uppercase;letter-spacing:.04em}
+.badge.muted{background:#eee;border-color:#ccc;color:#555}.soon{opacity:.75}.soon .card-top{background:#a6a6a6}
+.open{font-family:Muli,sans-serif;font-weight:700;text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;color:#4f7f7f}
+.open:after{content:" \2192"}
+footer{background:var(--dark);color:#dbdbdb;padding:44px 20px 24px;font-size:.92rem}
+.fcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;max-width:1140px;margin:0 auto}
+footer h4{font-family:Muli,sans-serif;color:#fff;text-transform:uppercase;letter-spacing:.06em;font-size:.85rem;margin:0 0 10px}
+footer a{color:#dbdbdb}footer a:hover{color:var(--teal)}
+.motto{font-family:Muli,sans-serif;color:var(--teal);font-style:italic;font-size:1.1rem}
+.fbase{max-width:1140px;margin:30px auto 0;padding-top:16px;border-top:1px solid #555;font-size:.8rem;color:#a6a6a6;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+@media (max-width:860px){
+ .burger{display:block}
+ .wordmark .a{font-size:2rem}.wordmark .b{font-size:1rem}
+ header.site{align-items:flex-start}
+ nav.main{display:none;width:100%}nav.main.open{display:block}
+ nav.main ul{flex-direction:column;background:rgba(53,53,53,.95);margin:14px -20px 0;max-width:none}
+ nav.main a{padding:13px 20px;border-bottom:1px solid rgba(255,255,255,.1)}
+ .hero{min-height:440px}
+}
 </style></head><body>
-<header><h1>Nishkam Virtues Curriculum Maps</h1><p class="motto">Man Neeva, Mat Uchi</p></header>
-<main><div role="note" style="background:#fff3cd;border-left:6px solid #C8A951;color:#1a1a1a;padding:12px 16px;margin:0 0 20px;border-radius:6px;font-weight:600">Draft, not yet checked. These pages are work in progress and haven't passed quality review yet.</div><p class="intro">Draft revision sites for each subject, built in the Nishkam design system. Choose a subject to explore.</p>
-<div class="grid"><div class="card soon"><span class="badge muted">Coming soon</span><h2>Business</h2><p>GCSE &amp; A Level Business revision</p></div><a class="card" href="english/"><span class="badge">Draft, not yet checked</span><h2>English</h2><p>GCSE &amp; A Level English Language and Literature</p><span class="open">Open &rarr;</span></a><div class="card soon"><span class="badge muted">Coming soon</span><h2>Maths</h2><p>GCSE &amp; A Level Mathematics</p></div><a class="card" href="re/"><span class="badge">Draft, not yet checked</span><h2>Religious Education</h2><p>GCSE &amp; A Level Religious Studies</p><span class="open">Open &rarr;</span></a></div></main>
-<footer><em>Man Neeva, Mat Uchi &mdash; To be humble, to be wise</em><br><small>Nishkam School West London &middot; Draft preview</small></footer>
+<a class="skip" href="#curriculum">Skip to content</a>
+<div class="draft" role="note">Draft, not yet checked. These pages are work in progress and haven't passed quality review yet.</div>
+<div class="hero">
+<header class="site">
+ <a class="wordmark" href="https://www.nishkamschooltrust.org/nswl/" aria-label="Nishkam School West London"><span class="a">nishkam<b>school</b></span><span class="b">west london</span></a>
+ <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o);this.innerHTML=o?'&times;':'&#9776;'">&#9776;</button>
+ <nav class="main" id="nav" aria-label="Main"><ul>
+  <li><a href="https://www.nishkamschooltrust.org/nswl/">Home</a></li><li><a href="https://www.nishkamschooltrust.org/nswl/about-us">About Us</a></li>
+  <li><a href="https://www.nishkamschooltrust.org/nswl/statutory-info/inspection-and-ofsted-reports">Statutory Info</a></li>
+  <li><a href="https://www.nishkamschooltrust.org/nswl/admissions/how-to-apply">Admissions</a></li><li><a href="https://www.nishkamschooltrust.org/nswl/page/?title=Education&amp;pid=209">Education</a></li>
+  <li><a href="https://www.nishkamschooltrust.org/nswl/parents">Parents</a></li><li><a href="https://www.nishkamschooltrust.org/nswl/page/?title=School+life&amp;pid=233">School Life</a></li><li><a href="https://www.nishkamschooltrust.org/nswl/sixthform">Sixth Form</a></li>
+  <li><a class="on" href="#curriculum">Curriculum Maps</a></li>
+  <li><a href="https://www.nishkamschooltrust.org/nswl/contact-us/contact-details">Contact Us</a></li>
+ </ul></nav>
+</header>
+<div class="hero-text"><h1>Curriculum Maps</h1><p>Man Neeva, Mat Uchi</p></div>
+</div>
+<div class="ticker">Draft subject revision sites &middot; not yet checked</div>
+<main id="main">
+<section id="curriculum"><div class="wrap">
+<h2>Curriculum</h2>
+<p class="lead">Draft revision sites for each subject at GCSE and A Level. Choose a subject to explore.</p>
+<div class="grid"><a class="card" href="business/"><div class="card-top"><span>Business</span></div><div class="card-body"><span class="badge">Draft, not yet checked</span><h3>Business</h3><p>GCSE &amp; A Level Business revision</p><span class="open">Read more</span></div></a><a class="card" href="english/"><div class="card-top"><span>English</span></div><div class="card-body"><span class="badge">Draft, not yet checked</span><h3>English</h3><p>GCSE &amp; A Level English Language and Literature</p><span class="open">Read more</span></div></a><a class="card" href="maths/"><div class="card-top"><span>Maths</span></div><div class="card-body"><span class="badge">Draft, not yet checked</span><h3>Maths</h3><p>GCSE &amp; A Level Mathematics</p><span class="open">Read more</span></div></a><a class="card" href="re/"><div class="card-top"><span>Religious Education</span></div><div class="card-body"><span class="badge">Draft, not yet checked</span><h3>Religious Education</h3><p>GCSE &amp; A Level Religious Studies</p><span class="open">Read more</span></div></a></div>
+</div></section>
+</main>
+<footer>
+<div class="fcols">
+ <div><h4>Nishkam School West London</h4>152 Syon Lane<br>Osterley, Hounslow<br>TW7 5PN<br>T: 0203 141 8760<br><small>Source: <a href="https://www.nishkamschooltrust.org/nswl/contact-us/contact-details">Contact Details</a></small></div>
+ <div><h4>Quick links</h4><a href="https://www.nishkamschooltrust.org/nswl/">School website</a><br><a href="https://www.nishkamschooltrust.org/nswl/admissions/how-to-apply">How to Apply</a><br><a href="https://www.nishkamschooltrust.org/nswl/contact-us/contact-details">Contact Details</a></div>
+ <div><h4>Our motto</h4><span class="motto">Man Neeva, Mat Uchi</span><br>To be humble, to be wise</div>
+</div>
+<div class="fbase"><span>Draft preview &middot; not an official school page</span><span>Curriculum Maps</span></div>
+</footer>
 </body></html>

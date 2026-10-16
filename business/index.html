@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex, nofollow"><title>Business | Nishkam School West London</title><style>
+:root{--navy:#1B2A4A;--navy-d:#13203a;--gold:#C8A951;--gold-light:#e3cf8f;--grey:#F5F5F5;--text:#1a1a1a;--white:#fff;--bdr:#dcdfe5;
+--ink:#1B2A4A;--slate:#1a1a1a;--steel:#33415a;--stone:#4a5568;--mist:#5f6b7a;--snow:#F5F5F5;--blue:#1B2A4A;--blue-l:#e8ecf4;--em:#2e7d32;--em-l:#e8f5e9;--red:#b42318;--red-l:#fdecea;--amb:#8a6d1d;--amb-l:#fbf5e3;--pur:#5b3d8f;--pur-l:#f1ecf8;--teal:#00695c;--teal-l:#e0f2f1;--purple:#5b3d8f;--purple-light:#f1ecf8;--orange-chain:#b85c00;--blue-extract:#1565c0;--green-eval:#2e7d32;--cream:#faf7f1;--sh:0 1px 3px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.05)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Calibri,'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--text);background:var(--white);line-height:1.65;font-size:16px}
+h1,h2,h3,h4,h5{font-family:Georgia,'Times New Roman',serif;color:var(--navy);line-height:1.25}
+a{color:var(--navy)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--navy);padding:8px 14px;z-index:200}.skip:focus{left:8px}
+/* sidebar */
+.sidebar{position:fixed;top:0;left:0;bottom:0;width:280px;background:var(--navy);color:#fff;overflow-y:auto;padding:24px 0 40px;z-index:100;transition:transform .25s}
+.sidebar .brand{padding:0 22px 18px;border-bottom:1px solid rgba(200,169,81,.35);margin-bottom:10px}
+.sidebar .brand a{color:#fff;text-decoration:none;font-family:Georgia,serif;font-size:20px;display:block}
+.sidebar .brand .motto{color:var(--gold);font-style:italic;font-family:Georgia,serif;font-size:14px}
+.sidebar .brand .spec{color:rgba(255,255,255,.75);font-size:12px;margin-top:4px}
+.sidebar h2{font-family:Calibri,'Segoe UI',sans-serif;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:1.2px;padding:16px 22px 6px;font-weight:700}
+.sidebar ul{list-style:none}
+.sidebar li a,.sidebar li span.soon{display:flex;gap:10px;padding:6px 22px;color:#fff;text-decoration:none;font-size:14px;border-left:3px solid transparent}
+.sidebar li a:hover{background:rgba(255,255,255,.07);border-left-color:var(--gold)}
+.sidebar li a[aria-current=page]{background:rgba(200,169,81,.15);border-left-color:var(--gold);font-weight:700}
+.sidebar li span.soon{color:rgba(255,255,255,.55)}
+.sidebar .ref{color:var(--gold);font-weight:700;min-width:38px;font-size:13px}
+.menu-btn{display:none;position:fixed;top:10px;left:10px;z-index:120;background:var(--navy);color:#fff;border:2px solid var(--gold);border-radius:6px;font-size:22px;width:44px;height:44px;cursor:pointer}
+.scrim{display:none}
+main{margin-left:280px;min-height:100vh}
+.wrap{max-width:1000px;margin:0 auto;padding:0 32px}
+/* hero/header */
+.hero{background:var(--navy);color:#fff;padding:56px 0 44px;border-bottom:4px solid var(--gold)}
+.hero h1{color:#fff;font-size:40px;margin-bottom:6px}
+.hero .motto{font-family:Georgia,serif;font-style:italic;color:var(--gold);font-size:18px;margin-bottom:14px}
+.hero .tag{font-family:Georgia,serif;font-style:italic;font-size:20px;color:#fff;opacity:.92;max-width:720px;margin-top:12px}
+.hero .meta{color:rgba(255,255,255,.85);font-size:15px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.badge{display:inline-block;background:rgba(200,169,81,.15);border:1px solid var(--gold);color:#fff;border-radius:999px;padding:3px 12px;font-size:12.5px;font-weight:700}
+/* page sections */
+.band{padding:48px 0}.band.alt{background:var(--grey)}
+.band h2.title{font-size:30px;margin-bottom:8px}
+.kicker{display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.lead{color:#333;max-width:760px;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.card{display:block;background:#fff;border:1px solid var(--bdr);border-radius:12px;padding:20px;box-shadow:var(--sh);text-decoration:none;color:var(--text);transition:transform .15s,box-shadow .15s,border-color .15s}
+a.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(27,42,74,.15);border-color:var(--gold)}
+.card .ref{color:var(--gold);font-weight:800;font-family:Georgia,serif;font-size:20px;background:var(--navy);display:inline-block;padding:2px 10px;border-radius:6px;margin-bottom:8px}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{font-size:14.5px;color:#333}
+.card .open{display:inline-block;margin-top:10px;font-weight:700;color:var(--navy);border-bottom:2px solid var(--gold)}
+.card .open.soon{color:#666;border-bottom-color:#bbb}
+.paper-group{margin-bottom:34px}.paper-group h3.pg{font-size:21px;margin-bottom:4px}.paper-group p.pg{color:#444;margin-bottom:14px}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.pillar{background:var(--navy);color:#fff;border-radius:12px;padding:22px;border-top:4px solid var(--gold)}
+.pillar h3{color:var(--gold);font-size:20px}.pillar .q{font-family:Georgia,serif;font-style:italic;color:#fff;margin:6px 0 10px}
+blockquote.mission{font-family:Georgia,serif;font-style:italic;font-size:21px;color:var(--navy);border-left:5px solid var(--gold);background:#fff;padding:22px 26px;margin:28px 0 6px;border-radius:0 10px 10px 0;box-shadow:var(--sh)}
+.cite{font-size:13px;color:#444;margin-left:30px}
+/* guide sections (prototype class names restyled) */
+.toc{background:#fff;border:1px solid var(--bdr);border-left:5px solid var(--gold);border-radius:10px;padding:18px 24px;margin:28px 0;box-shadow:var(--sh)}
+.toc h2{font-size:18px;margin-bottom:8px}.toc>ol{list-style:none;margin-left:0}.toc ol{margin-left:22px}.toc ol ol{margin:2px 0 4px 20px;list-style:none}
+.toc a{text-decoration:none;color:var(--navy);font-weight:600}.toc a:hover{color:var(--amb);text-decoration:underline}.toc ol ol a{font-weight:400;font-size:14.5px}
+section.gs{margin:40px 0}
+h2.sh{background:var(--navy);color:#fff;padding:14px 22px;border-radius:12px 12px 0 0;font-size:21px;display:flex;align-items:center;gap:12px;scroll-margin-top:12px}
+.sh .p,.pill{display:inline-block;background:var(--gold);color:var(--navy);font-family:Calibri,'Segoe UI',sans-serif;font-size:11px;font-weight:800;padding:3px 10px;border-radius:999px;letter-spacing:.6px;text-transform:uppercase;flex-shrink:0}
+.cd{background:#fff;border:1px solid var(--bdr);border-top:none;border-radius:0 0 12px 12px;padding:28px;box-shadow:var(--sh)}
+section.gs:nth-of-type(even) .cd{background:var(--grey)}
+.cd h3{font-size:21px;margin:26px 0 10px;padding-bottom:4px;border-bottom:3px solid var(--gold);display:inline-block}
+.cd h4{font-size:17px;margin:18px 0 8px}
+.cd h5{font-family:Calibri,'Segoe UI',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--navy);margin:14px 0 6px}
+.cd p,.cd ul,.cd ol{margin-bottom:10px}.cd ul,.cd ol{padding-left:22px}
+.bx,.box,.info-box,.case-study,.examiner-trap{padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0;background:#fff;border-left:5px solid var(--navy)}
+.bx .l,.box-label,.info-label,.case-label,.answer-label{display:block;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;color:var(--navy)}
+.df,.box.info,.info-box{background:#fbf6e6;border-left-color:var(--gold)}
+.tp,.box.trap,.examiner-trap,.mcq-trap{background:var(--red-l);border-left-color:var(--red)}.tp .l,.box.trap .box-label{color:var(--red)}
+.eg,.case-study{background:#eef2f9;border-left-color:#3b5998}.eg .l,.case-label{color:#2c4373}
+.jg{background:var(--em-l);border-left-color:var(--em)}.jg .l{color:var(--em)}
+.ti,.box.tip{background:#eef6f3;border-left-color:var(--teal)}.ti .l,.box.tip .box-label{color:var(--teal)}
+.nt,.box.formula{background:var(--pur-l);border-left-color:var(--pur)}.nt .l{color:var(--pur)}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:#fff}
+th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px;font-weight:700}
+td{padding:9px 12px;border-bottom:1px solid var(--bdr);vertical-align:top}tbody tr:nth-child(even),tr:nth-child(even) td{background:#f7f7f7}
+.tbl{overflow-x:auto}
+.mb,.ppq-marks,.tc-marks{display:inline-block;background:var(--navy);color:var(--gold);font-size:12px;font-weight:800;padding:2px 9px;border-radius:999px}
+.ppq-strip{background:#fff;border:1px solid var(--bdr);border-left:5px solid var(--gold);border-radius:0 8px 8px 0;padding:10px 14px;margin:14px 0 6px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ppq-badge,.mcq-ref{background:var(--navy);color:#fff;font-size:12px;font-weight:700;padding:2px 9px;border-radius:5px}.ppq-text{flex:1}
+details.ma{margin:10px 0 18px;border:2px solid var(--navy);border-radius:10px;background:#fff}
+details.ma>summary{cursor:pointer;padding:10px 16px;font-weight:800;color:var(--navy);background:#fbf6e6;border-radius:8px;list-style-position:inside}
+details.ma[open]>summary{border-bottom:1px solid var(--bdr);border-radius:8px 8px 0 0}
+details.ma>.inner{padding:14px 18px}
+.md,.box.model{margin:0}
+.sk-ao1{background:#E8EAF6;border-bottom:2px solid #3949AB;padding:0 2px}
+.sk-ao2,.extract-data{background:#E3F2FD;border-bottom:2px solid #1565C0;padding:0 2px}
+.sk-ao3,.chain{background:#FFF3E0;border-bottom:2px solid #E65100;padding:0 2px}
+.sk-ao4,.eval-text{background:#E8F5E9;border-bottom:2px solid #2E7D32;padding:0 2px}
+.sk-mod{background:#FCE4EC;border-bottom:2px solid #AD1457;padding:0 2px}
+.sk-rwe{background:#FFFDE7;border-bottom:2px solid #F9A825;padding:0 2px}
+.sk-leg{display:flex;flex-wrap:wrap;gap:10px;padding:12px 16px;background:#fff;border:1px solid var(--bdr);border-radius:8px;margin:14px 0;font-size:13px;font-weight:700}
+.dw,.dg{background:#fff;border:1px solid var(--bdr);border-radius:10px;padding:20px;margin:18px 0;overflow-x:auto;box-shadow:var(--sh)}
+.dw .cap{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:var(--navy);margin-bottom:10px}
+svg{max-width:100%;height:auto}
+.dv{height:3px;background:var(--gold);margin:34px 0;border-radius:2px;opacity:.6}
+.olabel,.new-exam-flag,.liability-badge,.role-label,.tc-type{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:#fbf6e6;color:var(--amb);border:1px solid var(--gold);margin-left:6px}
+.subsection{margin:22px 0}
+.two-col,.technique-grid,.glossary-grid,.structure-cards,.lm-stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:14px 0}
+.col-box,.technique-card,.glossary-item,.structure-card,.lm-stat-card{background:#fff;border:1px solid var(--bdr);border-radius:10px;padding:14px 16px}
+.col-box.pros{border-top:4px solid var(--em)}.col-box.cons{border-top:4px solid var(--red)}
+.tc-head{display:flex;justify-content:space-between;gap:8px;font-weight:700;margin-bottom:6px}
+.tc-formula,.formula-main{font-family:Georgia,serif;font-weight:700;color:var(--navy);background:#fbf6e6;padding:6px 10px;border-radius:6px;margin:6px 0;display:block}
+.glossary-term{font-weight:800;color:var(--navy)}
+.key-term{font-weight:700;color:var(--navy)}
+.card-row{display:flex;gap:10px;padding:6px 0;border-bottom:1px solid var(--bdr)}.card-key{font-weight:700;min-width:120px;color:var(--navy)}
+.mcq-card{border:1px solid var(--bdr);border-radius:10px;margin:14px 0;background:#fff}.mcq-head{background:var(--navy);color:#fff;padding:8px 14px;border-radius:10px 10px 0 0;display:flex;gap:10px}.mcq-body{padding:12px 16px}
+.mcq-answer-box{background:var(--em-l);padding:10px 14px;border-radius:8px;margin-top:8px}.mcq-trap{padding:8px 12px;border-radius:0 8px 8px 0;border-left:4px solid var(--red);margin-top:8px}
+.correct{color:var(--em);font-weight:700}.wrong{color:var(--red)}.impact-pos{color:var(--em);font-weight:700}.impact-neg{color:var(--red);font-weight:700}
+.checklist{list-style:none;padding-left:0}.checklist li{padding:4px 0 4px 26px;position:relative}.checklist li:before{content:'\2610';position:absolute;left:0;color:var(--navy)}
+ol.num{padding-left:26px}ol.num li{margin-bottom:10px}
+.ph{background:var(--grey);border:2px dashed var(--gold);border-radius:12px;padding:26px;margin:28px 0}
+/* footer */
+footer.site{background:var(--navy);color:rgba(255,255,255,.88);padding:44px 0 26px;margin-top:40px;border-top:4px solid var(--gold);font-size:14.5px}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px}
+footer.site h2{color:var(--gold);font-size:15px;margin-bottom:8px}
+footer.site ul{list-style:none}footer.site a{color:#fff;text-decoration:none}footer.site a:hover{color:var(--gold);text-decoration:underline}
+footer.site .motto{font-family:Georgia,serif;font-style:italic;color:var(--gold);font-size:18px;margin-bottom:14px}
+footer.site .base{border-top:1px solid rgba(200,169,81,.35);margin-top:24px;padding-top:14px;font-size:13px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media(max-width:900px){.sidebar{transform:translateX(-100%)}body.nav-open .sidebar{transform:none}.menu-btn{display:block}main{margin-left:0}.wrap{padding:0 18px}.hero{padding:70px 0 34px}.hero h1{font-size:30px}body.nav-open .scrim{display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:90}.cd{padding:18px}}
+@media print{.sidebar,.menu-btn{display:none}main{margin-left:0}details.ma{border-width:1px}}
+ main{margin-left:0}</style></head>
+<body><main id="content"><header class="hero"><div class="wrap"><h1>Business</h1><p class="motto">Man Neeva, Mat Uchi</p><p class="meta">Nishkam School West London revision sites</p></div></header>
+<section class="band"><div class="wrap"><div class="grid"><a class="card" href="gcse/index.html"><span class="ref">8132</span><h3>GCSE Business</h3><p>AQA GCSE Business &middot; Years 10&ndash;11</p><span class="open">Open &rarr;</span></a>
+<a class="card" href="alevel/index.html"><span class="ref">7138</span><h3>A-Level Business</h3><p>AQA A-Level Business &middot; Years 12&ndash;13</p><span class="open">Open &rarr;</span></a></div></div></section>
+<footer class="site"><div class="wrap"><p class="motto">Man Neeva, Mat Uchi &mdash; To be humble, to be wise</p><div class="base"><span>&copy; Nishkam School West London</span><span>AQA 8132 &middot; AQA 7138</span></div></div></footer></main></body></html>
